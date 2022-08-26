@@ -9,7 +9,7 @@ public interface CategoryMapper {
     @Mappings({
             @Mapping(source="idCategoria", target = "categoryId"),
             @Mapping(source="descripcion", target = "category"),
-            @Mapping(source="estado", target = "state")
+            @Mapping(source="estado", target = "active")
     })
     Category toCategory(Categoria categoria);
 
